@@ -1,0 +1,135 @@
+{% extends 'checkbook_base.html' %}
+{% block title %}Balance Sheet{% endblock %}
+{% block content %}
+			<div id="all-transactions-form">
+				<form> 
+					<br>
+					<!-- Use value to add the Django populated details-->
+					<label>Account Holder:</label><input id="accountholder" type="text" name="accountHolder" value="" readonly><br><br>
+					<label>Current Balance:</label><input id="balance" type="text" name="currentBalance" value="" readonly>
+					<!-- Add link to href to make this button work -->
+					<button type="button"><a href="">Add Transaction+</a></button>
+				</form>
+				<br><br>
+			</div>
+			<h2>RECENT TRANSACTIONS</h2>
+
+			<table class="table table-responsive" id ="transactions-table"> 
+				<!-- Replace this with the Django populated transactions -->
+				<tr id="headerRow">
+					<th>Date</th>
+					<th>Type</th>
+					<th>Description</th>
+					<th>Amount</th>
+					<th>Balance</th>
+				</tr>
+				<tr>
+					<td class="center">8/12/19</td>
+					<td class="center">Debit</td>
+					<td class="left">Target</td>
+					<td class="right">$123.45</td>
+					<td class="right">$10,654.78</td>
+				</tr>
+				<tr>
+						<td class="center">8/12/19</td>
+						<td class="center">Debit</td>
+						<td class="left">Nicoletti's Pizza</td>
+						<td class="right">$54.36</td>
+						<td class="right">$10,600.42</td>
+				</tr>
+				<tr>
+						<td class="center">8/14/19</td>
+						<td class="center">Debit</td>
+						<td class="left">7-Eleven</td>
+						<td class="right">$5.68</td>
+						<td class="right">$10,594.74</td>
+				</tr>
+				<tr>
+						<td class="center">8/15/19</td>
+						<td class="center">Credit</td>
+						<td class="left">Direct Deposit</td>
+						<td class="right">$2,789.43</td>
+						<td class="right">$13,384.17</td>
+				</tr>
+				<tr>
+						<td class="center">8/15/19</td>
+						<td class="center">Debit</td>
+						<td class="left">Mortgage</td>
+						<td class="right">$1854.89</td>
+						<td class="right">$11,529.28</td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+				<tr>
+						<td class="center"></td>
+						<td class="center"></td>
+						<td class="left"></td>
+						<td class="right"></td>
+						<td class="right"></td>
+				</tr>
+			</table>
+
+			<br><br>			
+{% endblock %}
+

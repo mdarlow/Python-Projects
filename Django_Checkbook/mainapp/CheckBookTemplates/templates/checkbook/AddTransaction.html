@@ -1,0 +1,14 @@
+{% extends 'checkbook_base.html' %}
+	{% block title%}Add New Transaction{% endblock %}
+	{% block content %}
+			<div class="new-transaction-form">
+				<form> <!-- Replace this with the Django Form -->
+					<label>Account:</label><input type="text" name="account"><br>
+					<label>Description:</label><input type="text" name="description"><br>
+                    <label>Type:</label><input type="text" name="transactionType"><br>
+                    <label>Amount:</label><input type="text" name="amount"><br><br>
+					<button id="new-transaction-button" type="submit" name="Save_Transaction">Add Transaction</button>
+				</form>
+				<br>	
+			</div>
+	{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'checkbook_base.html' %}
+{% block title %}Create New Account{% endblock %}
+{% block content %}
+	<h3>CREATE NEW ACCOUNT</h3>
+	<div id="account-form">
+		<form> <!-- Replace this with the Django Form -->
+			<label>First Name:</label><input type="text" name="firstName"><br>
+			<label>Last Name:</label><input type="text" name="lastName"><br>
+			<label>Initial Deposit:</label><input type="text" name="initialDeposit"><br><br>
+			<button id="new-account-button" type="submit" name="Save_Account">Create Account</button>
+		</form>
+		<br>
+	</div>
+{% endblock %}
