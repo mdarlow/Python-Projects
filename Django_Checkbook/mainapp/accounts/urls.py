@@ -4,6 +4,8 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
-    path('CreateNewAccount/', views.CreateNewAccount, name="CreateNewAccount"),
+    path('CreateNewAccount/', views.createNewAccount, name="CreateNewAccount"),
+    path('AddTransaction/', views.addTransaction, name="AddTransaction"),
 ]

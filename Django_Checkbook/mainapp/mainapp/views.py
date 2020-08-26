@@ -8,4 +8,4 @@ def home(request):
         "accounts": accounts,
     }
     return render(request, "index.html", context)
-    # return HttpResponse(f"<h1>Welcome {user}</h1>")
+    # return HttpResponse(f"<h1>Welcome, {user}</h1>")

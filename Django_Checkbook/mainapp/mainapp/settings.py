@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'accounts',
-    'CheckBookTemplates',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +57,7 @@ ROOT_URLCONF = 'mainapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "CheckBookTemplates/templates/checkbook")],
+        'DIRS': [os.path.join(BASE_DIR, "accounts/templates/checkbook")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,5 +122,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'CheckBookTemplates/static'),
+    os.path.join(BASE_DIR, 'accounts/static'),
 )
